@@ -32,16 +32,16 @@ function App() {
         {/* Navigation Bar */}
         <nav style={navStyle}>
           <Link to="/" style={linkStyle}>
-            🏠 Home
+            Home
           </Link>
           <Link to="/add" style={linkStyle}>
-            ➕ Add
+            Add
           </Link>
           <Link to="/update" style={linkStyle}>
-            🔧 Update
+            Update
           </Link>
           <Link to="/delete" style={linkStyle}>
-            🗑️ Delete
+            Delete
           </Link>
         </nav>
 
