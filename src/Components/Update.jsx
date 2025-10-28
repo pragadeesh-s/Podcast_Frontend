@@ -14,7 +14,7 @@ function Update() {
 
   const handleUpdate = async () => {
     try {
-      const resp = await axios.put(`http://localhost:3000/podcasts/${podcast.id}`, podcast);
+      const resp = await axios.put(`https://podcast-backend-8zkh.onrender.com/podcasts/${podcast.id}`, podcast);
       setMsg(resp.data.msg);
     } catch (e) {
       setMsg("Error: " + e.message);

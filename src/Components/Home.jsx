@@ -5,7 +5,7 @@ function Home() {
   const [podcasts, setPodcasts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/podcasts").then((resp) => {
+    axios.get("https://podcast-backend-8zkh.onrender.com/podcasts").then((resp) => {
       setPodcasts(resp.data);
     });
   }, []);

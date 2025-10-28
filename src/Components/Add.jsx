@@ -14,7 +14,7 @@ function Add() {
 
   const handleAdd = async () => {
     try {
-      const resp = await axios.post("http://localhost:3000/podcasts", podcast);
+      const resp = await axios.post("https://podcast-backend-8zkh.onrender.com/podcasts", podcast);
       setMsg(resp.data.msg);
     } catch (e) {
       setMsg("Error: " + e.message);

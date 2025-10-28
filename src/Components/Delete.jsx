@@ -8,7 +8,7 @@ function Delete() {
 
   const handleDelete = async () => {
     try {
-      const resp = await axios.delete(`http://localhost:3000/podcasts/${id}`);
+      const resp = await axios.delete(`https://podcast-backend-8zkh.onrender.com/podcasts/${id}`);
       setMsg(resp.data.msg);
     } catch (e) {
       setMsg("Error: " + e.message);
